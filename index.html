@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello World!</title>
+
+  <style>
+    body {
+      background: white;
+      text-align: center;
+      font-family: "Comic Sans MS", "Comic Sans", cursive;
+      margin: 0;
+      padding-top: 80px;
+    }
+
+    h1 {
+      font-size: 100px;
+      font-weight: bold;
+      letter-spacing: 5px;
+      animation: rainbow 2s infinite;
+      text-shadow: 4px 4px 0px #000;
+    }
+
+    .subtitle {
+      font-size: 35px;
+      color: #ff00aa;
+      font-family: "Courier New", monospace;
+      margin-top: 20px;
+    }
+
+    .star {
+      font-size: 50px;
+      animation: spin 3s linear infinite;
+      display: inline-block;
+    }
+
+    .button {
+      margin-top: 40px;
+      padding: 15px 30px;
+      font-size: 25px;
+      font-family: "Comic Sans MS", cursive;
+      background: yellow;
+      border: 5px solid black;
+      cursor: pointer;
+      box-shadow: 5px 5px 0 black;
+    }
+
+    .button:hover {
+      background: cyan;
+      transform: translate(3px, 3px);
+      box-shadow: 2px 2px 0 black;
+    }
+
+    @keyframes rainbow {
+      0%   { color: red; }
+      20%  { color: orange; }
+      40%  { color: green; }
+      60%  { color: blue; }
+      80%  { color: purple; }
+      100% { color: red; }
+    }
+
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="star">⭐</div>
+
+  <h1>HELLO WORLD!</h1>
+
+  <div class="subtitle">
+    ✨ Welcome to my totally awesome homepage ✨
+  </div>
+
+  <button class="button" onclick="alert('Greetings from the 90s! 📟')">
+    CLICK HERE!!!
+  </button>
+
+</body>
+</html>
